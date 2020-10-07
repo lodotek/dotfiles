@@ -7,9 +7,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle Seinh/git-prune
 antigen apply
 # If you come from bash you might have to change your $PATH.
-export GOHOME=/Users/christophermontes/go
+export GOHOME=/Users/$HOME/go
 export PATH=$HOME/bin:$HOME/go/bin:/usr/local/bin:$PATH
-export SRE_ROOT=/Users/christophermontes/src/sre
+export SRE_ROOT=/Users/$HOME/src/sre
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/christophermontes/.oh-my-zsh"
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -108,7 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/Users/christophermontes/Downloads/istio/1.4.2/bin:/usr/local/opt/gnu-getopt/bin:$PATH"
+#Set path to istio bins:
+export PATH="/Users/$HOME/Downloads/istio/1.4.2/bin:/usr/local/opt/gnu-getopt/bin:$PATH"
 #Setup path to helm2:
 export PATH="/usr/local/opt/helm@2/bin:$PATH"
 #Setup path for postgres client:
