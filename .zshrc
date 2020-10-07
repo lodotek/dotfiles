@@ -1,3 +1,11 @@
+source ~/antigen.zsh
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle pip
+antigen bundle command-not-found
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle Seinh/git-prune
+antigen apply
 # If you come from bash you might have to change your $PATH.
 export GOHOME=/Users/christophermontes/go
 export PATH=$HOME/bin:$HOME/go/bin:/usr/local/bin:$PATH
@@ -101,5 +109,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/Users/christophermontes/Downloads/istio/1.4.2/bin:/usr/local/opt/gnu-getopt/bin:$PATH"
-source ~/_istioctl
+#Setup path to helm2:
 export PATH="/usr/local/opt/helm@2/bin:$PATH"
+#Setup path for postgres client:
+export PATH="/usr/local/opt/libpq/bin:$PATH"
